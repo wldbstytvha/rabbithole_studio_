@@ -49,6 +49,17 @@ body {
   overflow-x: hidden;
 }
 
+/* ── Inserted Image Styles ── */
+.added-img-nav { height: 22px; width: auto; object-fit: contain; }
+.added-img-hero { max-width: 260px; width: 100%; height: auto; margin: 0 auto 30px; display: block; border-radius: 50%; box-shadow: var(--shadow-glow); animation: float 3s ease-in-out infinite; }
+.added-img-brand { width: 100%; height: auto; border-radius: 24px; margin-top: 24px; box-shadow: var(--shadow-md); object-fit: cover; border: 2px solid rgba(255,255,255,0.5); }
+.added-img-value { width: 100%; height: 160px; object-fit: cover; border-radius: 16px; margin-bottom: 20px; box-shadow: var(--shadow-sm); }
+.added-img-process { width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; box-shadow: var(--shadow-sm); }
+.added-img-diff { width: 100px; height: 100px; object-fit: contain; border-radius: 16px; margin-bottom: 12px; display: block; }
+.added-img-review { max-width: 150px; height: auto; display: block; margin: 0 auto 24px; border-radius: 50%; box-shadow: var(--shadow-md); }
+.added-img-contact { max-width: 280px; height: auto; display: block; margin: 0 auto 32px; filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5)); }
+.added-img-footer { max-width: 180px; height: auto; display: block; margin: 0 auto 16px; opacity: 0.9; }
+
 /* ── Utility ── */
 .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 .section { padding: 100px 0; }
@@ -922,7 +933,10 @@ body {
 <body>
 
 <nav class="nav">
-  <div class="nav-logo">Rabbit Hole</div>
+  <div class="nav-logo" style="display:flex; align-items:center; gap:8px;">
+    <img class="added-img-nav" alt="Image" src="https://github.com/user-attachments/assets/2dc633cc-bbbb-45d3-9b7a-a64268f4e54d" />
+    Rabbit Hole
+  </div>
   <a href="#brand">브랜드</a>
   <a href="#values">핵심 가치</a>
   <a href="#pricing">가격</a>
@@ -933,6 +947,7 @@ body {
 
 <section class="hero" id="hero">
   <div class="hero-content fade-up">
+    <img class="added-img-hero" alt="Image" src="https://github.com/user-attachments/assets/1027c0a2-791e-415c-8a91-fcc9ff1940dd" />
     <div class="hero-badge">Best Quality Short-Form</div>
     <h1>
       Rabbit Hole<br>
@@ -964,6 +979,7 @@ body {
         <p class="section-desc">
           현대에 와서는 <strong class="accent">'무언가에 깊게 몰입하여 시간 가는 줄 모르는 상태'</strong>를 뜻하기도 하죠.
         </p>
+        <img class="added-img-brand" alt="Image" src="https://github.com/user-attachments/assets/aec5cb65-ba10-4e60-ab28-ba36b501630a" />
       </div>
       <div class="brand-cards fade-up">
         <div class="brand-card">
@@ -988,18 +1004,21 @@ body {
     </div>
     <div class="values-grid">
       <div class="value-card fade-up">
+        <img class="added-img-value" alt="Image" src="https://github.com/user-attachments/assets/de78887e-806a-4f29-bbea-4583e4b5593f" />
         <div class="value-icon">👁</div>
         <h3>Deep Immersion</h3>
         <div class="value-kr">몰입</div>
         <p>단 3초 만에 <strong>시선</strong>을 사로잡고, 마지막까지 영상을 보게 만드는 심리적 장치를 설계합니다.</p>
       </div>
       <div class="value-card fade-up">
+        <img class="added-img-value" alt="Image" src="https://github.com/user-attachments/assets/d4e97be9-7e33-45ea-822e-ea5fa0da7afe" />
         <div class="value-icon">💡</div>
         <h3>New Perspective</h3>
         <div class="value-kr">발견</div>
         <p>뻔한 영상이 아닌, 브랜드의 <strong>숨겨진 매력</strong>을 찾아내어 시청자에게 <strong>새로운 세계</strong>를 보여줍니다.</p>
       </div>
       <div class="value-card fade-up">
+        <img class="added-img-value" alt="Image" src="https://github.com/user-attachments/assets/17c8110b-741b-4ec2-930a-559b5dbe6e8d" />
         <div class="value-icon">🚀</div>
         <h3>Algorithm Flow</h3>
         <div class="value-kr">확장</div>
@@ -1147,6 +1166,7 @@ body {
       <div class="process-card fade-up">
         <div class="process-num">01</div>
         <div class="process-box">
+          <img class="added-img-process" alt="Image" src="https://github.com/user-attachments/assets/0891cec6-e935-4e5a-aa53-3bb54899bea0" />
           <h3>상담</h3>
           <p>클라이언트의 업종, 목표, 방향성 파악 및 맞춤형 서비스 제안</p>
         </div>
@@ -1155,6 +1175,7 @@ body {
       <div class="process-card fade-up">
         <div class="process-num">02</div>
         <div class="process-box">
+          <img class="added-img-process" alt="Image" src="https://github.com/user-attachments/assets/9f1c092f-3d1a-430b-9931-0d985e4ba5ec" />
           <h3>기획</h3>
           <p>영상 콘티 및 기획안 제작 후 고객 컨펌 진행</p>
         </div>
@@ -1163,6 +1184,7 @@ body {
       <div class="process-card fade-up">
         <div class="process-num">03</div>
         <div class="process-box">
+          <img class="added-img-process" alt="Image" src="https://github.com/user-attachments/assets/a4231f33-3892-4599-8d69-9e74825fb01d" />
           <h3>제작</h3>
           <p>제품 수령 후 촬영 또는 직접 현장 방문 촬영 수행</p>
         </div>
@@ -1171,6 +1193,7 @@ body {
       <div class="process-card fade-up">
         <div class="process-num">04</div>
         <div class="process-box">
+          <img class="added-img-process" alt="Image" src="https://github.com/user-attachments/assets/cbea2c51-de06-4cf2-b249-bed7d10a97d5" />
           <h3>납품</h3>
           <p>최종 완성본 전달 (수정 1회 기본 포함) 및 피드백 반영</p>
         </div>
@@ -1189,6 +1212,7 @@ body {
       <div class="diff-card fade-up">
         <div class="diff-icon">🎯</div>
         <div>
+          <img class="added-img-diff" alt="Image" src="https://github.com/user-attachments/assets/9a908f76-bb0e-413b-b28a-dfe9e536655f" />
           <h4>조회수가 터지는 후킹 설계</h4>
           <p>단순 편집자가 아닌 <strong>기획자가 투입</strong>되어 조회수가 터지는 후킹 포인트를 설계합니다.</p>
         </div>
@@ -1196,6 +1220,7 @@ body {
       <div class="diff-card fade-up">
         <div class="diff-icon">📝</div>
         <div>
+          <img class="added-img-diff" alt="Image" src="https://github.com/user-attachments/assets/d7958034-01ad-4b74-a32d-7a084e42b051" />
           <h4>상세한 콘티 공유</h4>
           <p>촬영 전 상세한 콘티 공유로 결과물의 <strong>불확실성을 최소화</strong>합니다.</p>
         </div>
@@ -1203,6 +1228,7 @@ body {
       <div class="diff-card fade-up">
         <div class="diff-icon">🔥</div>
         <div>
+          <img class="added-img-diff" alt="Image" src="https://github.com/user-attachments/assets/871f231f-17d0-487a-9975-a8d89ed3b759" />
           <h4>MZ세대 트렌드 반영</h4>
           <p>트렌드에 민감한 <strong>MZ세대 대표가 직접 기획</strong>에 참여하여, 타겟 고객이 열광하는 최신 유행과 코드를 정확히 짚어냅니다.</p>
         </div>
@@ -1210,6 +1236,7 @@ body {
       <div class="diff-card fade-up">
         <div class="diff-icon">💬</div>
         <div>
+          <img class="added-img-diff" alt="Image" src="https://github.com/user-attachments/assets/cef48529-75ec-4fd7-8c3c-b6d0351628cd" />
           <h4>빠른 소통</h4>
           <p><strong>고객과의 소통을 최우선</strong>으로 생각합니다. 문의 사항에 대해 즉각적이고 빠른 피드백을 제공하여 원활한 진행을 보장합니다.</p>
         </div>
@@ -1221,6 +1248,7 @@ body {
 <section class="section reviews" id="reviews">
   <div class="container text-center">
     <div class="fade-up">
+      <img class="added-img-review" alt="Image" src="https://github.com/user-attachments/assets/a2f4006f-7f5f-4949-8e53-88afa3286626" />
       <div class="section-label">💬 Reviews</div>
       <h2 class="section-title">클라이언트 리얼 후기</h2>
     </div>
@@ -1256,6 +1284,7 @@ body {
 
 <section class="contact" id="contact">
   <div class="container fade-up">
+    <img class="added-img-contact" alt="Image" src="https://github.com/user-attachments/assets/ef35b017-5b6a-445e-99ac-93ea8d5847e2" />
     <div class="section-label" style="background:rgba(255,255,255,0.1);color:var(--pink-300);">📩 Contact</div>
     <h2 class="section-title" style="margin-top:16px;">Rabbit Hole Studio<br>문의</h2>
     <p class="contact-desc">한 번 보면 헤어 나올 수 없는 몰입,<br>당신의 브랜드를 향한 거대한 래빗홀을 만듭니다.</p>
@@ -1278,6 +1307,7 @@ body {
 </section>
 
 <footer class="footer">
+  <img class="added-img-footer" alt="Image" src="https://github.com/user-attachments/assets/d14499eb-1bfd-4317-8d90-d23dde087828" />
   <p>&copy; 2025 Rabbit Hole Studio. All rights reserved.</p>
 </footer>
 
